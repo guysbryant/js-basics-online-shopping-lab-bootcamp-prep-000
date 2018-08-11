@@ -26,6 +26,7 @@ function viewCart() {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
   }else{
     var message = "In your cart, you have ";
+    var lastItem = cart.length -1;
     for(var i = 0; i < cart.length -1; i++){
       message += `${cart[i].itemName} at $${cart[i].itemPrice}, `
     }
