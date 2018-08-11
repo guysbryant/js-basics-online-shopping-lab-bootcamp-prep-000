@@ -46,7 +46,8 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  for (var i = 0; i < cart.length; i++){
+  var i = 0;
+  while (i < cart.length){
     if (cart[i].itemName === item){
        cart.splice(i, 1);
     }
