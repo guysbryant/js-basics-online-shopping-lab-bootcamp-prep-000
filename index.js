@@ -30,7 +30,7 @@ function viewCart() {
     for(var i = 0; i < lastItem; i++){
       message += `${cart[i].itemName} at $${cart[i].itemPrice}, `
     }
-    message += `and ${cart[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}.`
+    message += `and ${cart[lastItem].itemName} at $${cart[lastItem].itemPrice}.`
     return message;
   }
 }
