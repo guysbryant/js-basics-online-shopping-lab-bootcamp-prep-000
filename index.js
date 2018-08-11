@@ -39,7 +39,7 @@ function total() {
   // write your code here
   var price = 0;
   for (var i = 0; i < cart.length; i++){
-    price += cart[i][itemPrice];
+    price += cart[i].itemPrice;
   }
   return price;
 }
